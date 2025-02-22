@@ -1,5 +1,4 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import TestComponent from "../components/test/TestComponent";
 
@@ -8,6 +7,10 @@ import TestComponent from "../components/test/TestComponent";
 ---
 
 <Layout>
-  <Welcome />
   <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <main>
+    <h1 class="text-3xl font-bold mb-6">La mia pagina Astro</h1>
+    <!-- Il componente React viene renderizzato qui -->
+    <TestComponent client:load />
+  </main>
 </Layout>
