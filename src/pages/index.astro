@@ -1,42 +1,57 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ModeToggle from '../components/ModeToggle.astro';
+import Layout from '../layouts/Layout.astro'
+//import { ModeToggle } from '../components/test/ModeToggle.tsx'
+import ModeToggle from '../components/ModeToggle.astro'
 ---
 
 <Layout title="Welcome to Astro">
-  <main class="min-h-screen flex flex-col items-center justify-center p-6 relative">
-    <div class="absolute inset-0 -z-10 bg-white dark:bg-gray-900 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
-    
+  <main
+    class="min-h-screen flex flex-col items-center justify-center p-6 relative"
+  >
+    <div
+      class="absolute inset-0 -z-10 bg-white dark:bg-gray-900 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"
+    >
+    </div>
+
     <div class="text-center max-w-3xl mx-auto">
-      <h1 class="text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400">
+      <h1
+        class="text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400"
+      >
         Welcome to Astro
       </h1>
-      
+
       <p class="text-xl text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">
-        To get started, open the directory <code class="px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-800 font-mono text-sm">src/pages</code> in your project.
+        To get started, open the directory <code
+          class="px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-800 font-mono text-sm"
+          >src/pages</code
+        > in your project.
       </p>
 
       <div class="space-y-4">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Code Challenge</h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400">Rebuild it in Rust.</p>
+        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">
+          Code Challenge
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">
+          Rebuild it in Rust.
+        </p>
       </div>
 
       <div class="flex items-center justify-center gap-6 mt-12">
-        <a 
-          href="https://docs.astro.build" 
+        <a
+          href="https://docs.astro.build"
           class="px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white font-medium hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
         >
           Documentation
         </a>
-        <a 
-          href="https://astro.build/chat" 
+        <a
+          href="https://astro.build/chat"
           class="px-8 py-3 rounded-full border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
         >
           Join Discord
         </a>
       </div>
     </div>
-    
+
     <ModeToggle />
   </main>
 </Layout>
