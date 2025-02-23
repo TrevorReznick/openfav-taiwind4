@@ -1,8 +1,8 @@
-import { useStore } from "@nanostores/react";
-import { counterStore } from "../../store";
+import { useStore } from '@nanostores/react'
+import { counterStore } from '../../store'
 
 function TestComponent() {
-  const count = useStore(counterStore);
+  const count = useStore(counterStore)
 
   return (
     <div className="p-4 border rounded-lg bg-white shadow-sm">
@@ -15,7 +15,7 @@ function TestComponent() {
         Incrementa
       </button>
     </div>
-  );
+  )
 }
 
-export default TestComponent;
+export default TestComponent
