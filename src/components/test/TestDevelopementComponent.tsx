@@ -7,7 +7,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@ui/card'
+} from '@/components/ui/card'
 import { Briefcase, Code2, User, FolderKanban } from 'lucide-react'
 import { STYLES } from '../../config/style'
 
